@@ -1,0 +1,6 @@
+framework module Pods_Chunky {
+  umbrella header "Pods-Chunky-umbrella.h"
+
+  export *
+  module * { export * }
+}
