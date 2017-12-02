@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BB27C9B68D0FC35F516BD8C8 /* Pods_Chunky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAD06C03E04DC2A23A496B1 /* Pods_Chunky.framework */; };
+		E118638F1FD347B400818E5F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E118638E1FD347B400818E5F /* SignUpViewController.swift */; };
 		E12F72101FC8E839004C6572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F720F1FC8E839004C6572 /* AppDelegate.swift */; };
-		E12F72121FC8E839004C6572 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F72111FC8E839004C6572 /* ViewController.swift */; };
+		E12F72121FC8E839004C6572 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F72111FC8E839004C6572 /* LogInViewController.swift */; };
 		E12F72151FC8E839004C6572 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12F72131FC8E839004C6572 /* Main.storyboard */; };
 		E12F72181FC8E839004C6572 /* Chunky.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E12F72161FC8E839004C6572 /* Chunky.xcdatamodeld */; };
 		E12F721A1FC8E839004C6572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E12F72191FC8E839004C6572 /* Assets.xcassets */; };
@@ -21,9 +22,10 @@
 		5DAD06C03E04DC2A23A496B1 /* Pods_Chunky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chunky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		706869C8D85243CDD634F4F1 /* Pods-Chunky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chunky.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chunky/Pods-Chunky.release.xcconfig"; sourceTree = "<group>"; };
 		C97E4401ECA780C6C0D45F44 /* Pods-Chunky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chunky.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chunky/Pods-Chunky.debug.xcconfig"; sourceTree = "<group>"; };
+		E118638E1FD347B400818E5F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E12F720C1FC8E839004C6572 /* Chunky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chunky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12F720F1FC8E839004C6572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E12F72111FC8E839004C6572 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E12F72111FC8E839004C6572 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		E12F72141FC8E839004C6572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E12F72171FC8E839004C6572 /* Chunky.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Chunky.xcdatamodel; sourceTree = "<group>"; };
 		E12F72191FC8E839004C6572 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,7 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				E12F720F1FC8E839004C6572 /* AppDelegate.swift */,
-				E12F72111FC8E839004C6572 /* ViewController.swift */,
+				E12F72111FC8E839004C6572 /* LogInViewController.swift */,
+				E118638E1FD347B400818E5F /* SignUpViewController.swift */,
 				E12F72131FC8E839004C6572 /* Main.storyboard */,
 				E12F72191FC8E839004C6572 /* Assets.xcassets */,
 				E12F721B1FC8E839004C6572 /* LaunchScreen.storyboard */,
@@ -234,8 +237,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E12F72121FC8E839004C6572 /* ViewController.swift in Sources */,
+				E12F72121FC8E839004C6572 /* LogInViewController.swift in Sources */,
 				E12F72181FC8E839004C6572 /* Chunky.xcdatamodeld in Sources */,
+				E118638F1FD347B400818E5F /* SignUpViewController.swift in Sources */,
 				E12F72101FC8E839004C6572 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
