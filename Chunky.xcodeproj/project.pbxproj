@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		BB27C9B68D0FC35F516BD8C8 /* Pods_Chunky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAD06C03E04DC2A23A496B1 /* Pods_Chunky.framework */; };
 		E118638F1FD347B400818E5F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E118638E1FD347B400818E5F /* SignUpViewController.swift */; };
+		E11863931FD3628C00818E5F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11863921FD3628C00818E5F /* Task.swift */; };
+		E11863951FD362B900818E5F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11863941FD362B900818E5F /* User.swift */; };
+		E11863971FD3631E00818E5F /* TaskFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11863961FD3631E00818E5F /* TaskFeed.swift */; };
+		E11863991FD37E4C00818E5F /* TaskCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11863981FD37E4C00818E5F /* TaskCollectionViewCell.swift */; };
+		E118639B1FD4B6E500818E5F /* TaskCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E118639A1FD4B6E500818E5F /* TaskCreationViewController.swift */; };
 		E12F72101FC8E839004C6572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F720F1FC8E839004C6572 /* AppDelegate.swift */; };
 		E12F72121FC8E839004C6572 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F72111FC8E839004C6572 /* LogInViewController.swift */; };
 		E12F72151FC8E839004C6572 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12F72131FC8E839004C6572 /* Main.storyboard */; };
@@ -23,6 +28,11 @@
 		706869C8D85243CDD634F4F1 /* Pods-Chunky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chunky.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chunky/Pods-Chunky.release.xcconfig"; sourceTree = "<group>"; };
 		C97E4401ECA780C6C0D45F44 /* Pods-Chunky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chunky.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chunky/Pods-Chunky.debug.xcconfig"; sourceTree = "<group>"; };
 		E118638E1FD347B400818E5F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E11863921FD3628C00818E5F /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		E11863941FD362B900818E5F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E11863961FD3631E00818E5F /* TaskFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFeed.swift; sourceTree = "<group>"; };
+		E11863981FD37E4C00818E5F /* TaskCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCollectionViewCell.swift; sourceTree = "<group>"; };
+		E118639A1FD4B6E500818E5F /* TaskCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCreationViewController.swift; sourceTree = "<group>"; };
 		E12F720C1FC8E839004C6572 /* Chunky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chunky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12F720F1FC8E839004C6572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E12F72111FC8E839004C6572 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +97,11 @@
 				E12F720F1FC8E839004C6572 /* AppDelegate.swift */,
 				E12F72111FC8E839004C6572 /* LogInViewController.swift */,
 				E118638E1FD347B400818E5F /* SignUpViewController.swift */,
+				E11863921FD3628C00818E5F /* Task.swift */,
+				E11863941FD362B900818E5F /* User.swift */,
+				E118639A1FD4B6E500818E5F /* TaskCreationViewController.swift */,
+				E11863961FD3631E00818E5F /* TaskFeed.swift */,
+				E11863981FD37E4C00818E5F /* TaskCollectionViewCell.swift */,
 				E12F72131FC8E839004C6572 /* Main.storyboard */,
 				E12F72191FC8E839004C6572 /* Assets.xcassets */,
 				E12F721B1FC8E839004C6572 /* LaunchScreen.storyboard */,
@@ -238,7 +253,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E12F72121FC8E839004C6572 /* LogInViewController.swift in Sources */,
+				E11863991FD37E4C00818E5F /* TaskCollectionViewCell.swift in Sources */,
 				E12F72181FC8E839004C6572 /* Chunky.xcdatamodeld in Sources */,
+				E11863951FD362B900818E5F /* User.swift in Sources */,
+				E11863931FD3628C00818E5F /* Task.swift in Sources */,
+				E118639B1FD4B6E500818E5F /* TaskCreationViewController.swift in Sources */,
+				E11863971FD3631E00818E5F /* TaskFeed.swift in Sources */,
 				E118638F1FD347B400818E5F /* SignUpViewController.swift in Sources */,
 				E12F72101FC8E839004C6572 /* AppDelegate.swift in Sources */,
 			);
