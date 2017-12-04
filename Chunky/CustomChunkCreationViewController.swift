@@ -59,22 +59,6 @@ class CustomChunkCreationViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    @IBAction func doneButtonPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "toTaskCreation", sender: chunks)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let id = segue.identifier {
-            if id == "toTaskCreation" {
-                if let dest = segue.destination as? TaskCreationViewController {
-                    if let newChunks = sender as? [String] {
-                        dest.chunks = newChunks
-                    }
-                }
-            }
-        }
-    }
-
     /*
     // MARK: - Navigation
 

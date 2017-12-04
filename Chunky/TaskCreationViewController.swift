@@ -10,6 +10,13 @@ import UIKit
 
 class TaskCreationViewController: UIViewController, UITextFieldDelegate {
     
+    @IBAction func unwindToTaskCreation(sender: UIStoryboardSegue) {
+        if sender.source is CustomChunkCreationViewController {
+            if let senderVC = sender.source as? CustomChunkCreationViewController {
+                self.chunks = senderVC.chunks
+            }
+        }
+    }
     var taskName = ""
     var chunks = ["20%", "20%", "20%", "20%", "20%"]
     
@@ -35,7 +42,7 @@ class TaskCreationViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func chunkStyleChanged(_ sender: UISegmentedControl) {
-        if chunkStylePicker.selectedSegmentIndex == 0 {
+        if chunkStylePicker.selectedSegmentIndex == 1 {
             performSegue(withIdentifier: "createCustomChunks", sender: nil)
         } else {
             chunks = ["20%", "20%", "20%", "20%", "20%"]
