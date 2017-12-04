@@ -10,8 +10,7 @@ import Foundation
 class Task {
     let name: String
     let dueDate: Date
-    var chunks: [String] = ["20%", "20%", "20%", "20%", "20%"]
-    
+    var chunks: [String]
     init(name: String, dueDate: Date, chunks: [String]) {
         self.name = name
         self.dueDate = dueDate

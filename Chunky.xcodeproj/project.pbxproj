@@ -14,6 +14,7 @@
 		E11863971FD3631E00818E5F /* TaskFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11863961FD3631E00818E5F /* TaskFeed.swift */; };
 		E11863991FD37E4C00818E5F /* TaskCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11863981FD37E4C00818E5F /* TaskCollectionViewCell.swift */; };
 		E118639B1FD4B6E500818E5F /* TaskCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E118639A1FD4B6E500818E5F /* TaskCreationViewController.swift */; };
+		E118639D1FD4C8C500818E5F /* CustomChunkCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E118639C1FD4C8C500818E5F /* CustomChunkCreationViewController.swift */; };
 		E12F72101FC8E839004C6572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F720F1FC8E839004C6572 /* AppDelegate.swift */; };
 		E12F72121FC8E839004C6572 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F72111FC8E839004C6572 /* LogInViewController.swift */; };
 		E12F72151FC8E839004C6572 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12F72131FC8E839004C6572 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		E11863961FD3631E00818E5F /* TaskFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFeed.swift; sourceTree = "<group>"; };
 		E11863981FD37E4C00818E5F /* TaskCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCollectionViewCell.swift; sourceTree = "<group>"; };
 		E118639A1FD4B6E500818E5F /* TaskCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCreationViewController.swift; sourceTree = "<group>"; };
+		E118639C1FD4C8C500818E5F /* CustomChunkCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomChunkCreationViewController.swift; sourceTree = "<group>"; };
 		E12F720C1FC8E839004C6572 /* Chunky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chunky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12F720F1FC8E839004C6572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E12F72111FC8E839004C6572 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				E11863921FD3628C00818E5F /* Task.swift */,
 				E11863941FD362B900818E5F /* User.swift */,
 				E118639A1FD4B6E500818E5F /* TaskCreationViewController.swift */,
+				E118639C1FD4C8C500818E5F /* CustomChunkCreationViewController.swift */,
 				E11863961FD3631E00818E5F /* TaskFeed.swift */,
 				E11863981FD37E4C00818E5F /* TaskCollectionViewCell.swift */,
 				E12F72131FC8E839004C6572 /* Main.storyboard */,
@@ -256,6 +259,7 @@
 				E11863991FD37E4C00818E5F /* TaskCollectionViewCell.swift in Sources */,
 				E12F72181FC8E839004C6572 /* Chunky.xcdatamodeld in Sources */,
 				E11863951FD362B900818E5F /* User.swift in Sources */,
+				E118639D1FD4C8C500818E5F /* CustomChunkCreationViewController.swift in Sources */,
 				E11863931FD3628C00818E5F /* Task.swift in Sources */,
 				E118639B1FD4B6E500818E5F /* TaskCreationViewController.swift in Sources */,
 				E11863971FD3631E00818E5F /* TaskFeed.swift in Sources */,
