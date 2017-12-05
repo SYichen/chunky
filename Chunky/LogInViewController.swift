@@ -54,7 +54,7 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    /*
+    
     override func viewDidAppear(_ animated: Bool) {
         Auth.auth().addStateDidChangeListener{ (auth, user) in
             if user != nil {
@@ -62,7 +62,7 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
             }
         }
         
-    }*/
+    }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if textField == self.emailText {

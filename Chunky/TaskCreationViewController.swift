@@ -19,15 +19,22 @@ class TaskCreationViewController: UIViewController, UITextFieldDelegate {
     }
     var taskName = ""
     var chunks = ["20%", "20%", "20%", "20%", "20%"]
+    var completedChunks = [false, false, false, false, false]
     
     @IBOutlet weak var taskNameText: UITextField!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var chunkStylePicker: UISegmentedControl!
     
     @IBAction func createTask(_ sender: UIButton) {
+        let appDel = UIApplication.shared.delegate as! AppDelegate
+        let context = appDel.persistentContainer.viewContext
         let date = datePicker.date
-        let task = Task(name: taskName, dueDate: date, chunks: chunks)
-        addTask(task: task)
+        let task = Task(context: context)
+        task.name = taskName
+        task.dueDate = date
+        task.chunks = chunks as NSObject
+        task.completedChunks = completedChunks as NSObject
+        appDel.saveContext()
     }
     
     override func viewDidLoad() {

@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import UIKit
+
 
 var allTasks: [Task] = []
 
@@ -18,11 +20,15 @@ func addTask(task: Task) {
     else {
         var i = 0
         while (i < allTasks.count) {
-            if task.dueDate < allTasks[i].dueDate {
+            if task.dueDate! <= allTasks[i].dueDate! {
                 allTasks.insert(task, at: i)
                 break
             } else {
                 i += 1
+                if i == allTasks.count {
+                    allTasks.append(task)
+                    break
+                }
             }
         }
     }
