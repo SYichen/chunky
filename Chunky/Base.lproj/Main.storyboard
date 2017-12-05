@@ -67,7 +67,11 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="fuA-Gz-KuE" appends="YES" id="ke4-ze-bPw"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="emailText" destination="nQB-hO-2fC" id="7tI-5m-vZu"/>
@@ -76,6 +80,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="fuA-Gz-KuE">
+                    <connections>
+                        <action selector="userTappedBackgroundWithSender:" destination="BYZ-38-t0r" id="uHV-ay-3Ql"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-71.200000000000003" y="118.29085457271366"/>
         </scene>
@@ -149,7 +158,11 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="Nbq-oS-MwH"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Vbf-pI-VH0" appends="YES" id="yox-yI-9dS"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="emailText" destination="6KZ-Jm-XAz" id="AmT-as-X2T"/>
@@ -160,6 +173,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9i-Ai-jeS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Vbf-pI-VH0">
+                    <connections>
+                        <action selector="userTappedBackgroundWithSender:" destination="Gzk-Cp-ksT" id="4ky-la-opF"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-71.200000000000003" y="868.51574212893559"/>
         </scene>
@@ -193,8 +211,8 @@
                                                     <rect key="frame" x="0.0" y="73" width="122" height="82"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8DZ-c5-JO9">
-                                                            <rect key="frame" x="40" y="30" width="34" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8DZ-c5-JO9">
+                                                            <rect key="frame" x="8" y="30" width="106" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="tintColor" red="1" green="0.98761756609999996" blue="0.99266537610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -213,8 +231,8 @@
                                                     <rect key="frame" x="0.0" y="160" width="122" height="82"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtk-Eg-5ad">
-                                                            <rect key="frame" x="44" y="30" width="34" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtk-Eg-5ad">
+                                                            <rect key="frame" x="8" y="30" width="106" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="1" green="0.98761756609999996" blue="0.99266537610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -232,8 +250,8 @@
                                                     <rect key="frame" x="0.0" y="248" width="122" height="82"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVQ-hk-OOg">
-                                                            <rect key="frame" x="44" y="30" width="34" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVQ-hk-OOg">
+                                                            <rect key="frame" x="8" y="30" width="106" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="1" green="0.98761756609999996" blue="0.99266537610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -251,8 +269,8 @@
                                                     <rect key="frame" x="0.0" y="335" width="122" height="82"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8h-JO-Nkg">
-                                                            <rect key="frame" x="44" y="30.5" width="34" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8h-JO-Nkg">
+                                                            <rect key="frame" x="8" y="31" width="106" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="1" green="0.98761756609999996" blue="0.99266537610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -285,19 +303,19 @@
                                                         <outletCollection property="gestureRecognizers" destination="BdS-ZA-BTO" appends="YES" id="pDb-gg-D0A"/>
                                                     </connections>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Due:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ea1-uq-pvu">
-                                                    <rect key="frame" x="0.0" y="42" width="122" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
-                                                    <color key="textColor" red="0.38823529411764707" green="0.792156862745098" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Task Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wI8-DI-3xm">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Task Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wI8-DI-3xm">
                                                     <rect key="frame" x="0.0" y="0.0" width="122" height="37"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <gestureRecognizers/>
                                                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                                     <color key="textColor" red="0.38823529410000002" green="0.79215686269999996" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Due:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ea1-uq-pvu">
+                                                    <rect key="frame" x="0.0" y="41" width="122" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                                    <color key="textColor" red="0.38823529411764707" green="0.792156862745098" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -322,12 +340,21 @@
                                     <segue destination="wkx-9v-aJ3" kind="show" id="PDX-YW-ew9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0c2-QN-h8y">
+                                <rect key="frame" x="16" y="23" width="99" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="logout"/>
+                                <connections>
+                                    <action selector="logOut:" destination="OmU-jy-Rxd" eventType="touchUpInside" id="RCv-wY-w8J"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="2g0-XW-Wf4"/>
                     </view>
                     <connections>
                         <outlet property="collection" destination="uSh-40-yK7" id="Mml-ML-0rA"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toLogIn" id="7iI-7v-Rsh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vtc-dv-s62" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -425,7 +452,11 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="7Ld-pB-JjP"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="FGR-wJ-Saq" appends="YES" id="TZD-Wa-Ztb"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="2kT-bY-HQZ"/>
                     <connections>
@@ -437,6 +468,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aiK-ba-BLj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="eYs-Zc-YNR" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="FGR-wJ-Saq">
+                    <connections>
+                        <action selector="userTappedBackgroundWithSender:" destination="wkx-9v-aJ3" id="E4z-Zo-9Bn"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1572" y="138.98050974512745"/>
         </scene>
@@ -521,7 +557,11 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="YN3-QK-Qhn"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="A2H-3a-RfU" appends="YES" id="zcc-Ja-MkS"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="chunk1Text" destination="fRn-rM-sEn" id="iST-e3-5xH"/>
@@ -533,6 +573,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lPj-As-AQE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Jgq-Qg-OOj" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="A2H-3a-RfU">
+                    <connections>
+                        <action selector="userTappedBackgroundWithSender:" destination="7nJ-pW-JUY" id="aRO-Qn-w8t"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2474" y="160"/>
         </scene>
@@ -555,10 +600,13 @@
         <image name="email" width="74" height="36"/>
         <image name="login" width="115" height="42"/>
         <image name="logo" width="280" height="133"/>
+        <image name="logout" width="133" height="54"/>
         <image name="password" width="116" height="35"/>
         <image name="signup" width="115" height="42"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="HeZ-nQ-KeK"/>
+        <segue reference="PDX-YW-ew9"/>
+        <segue reference="7Ye-zA-AdN"/>
+        <segue reference="7iI-7v-Rsh"/>
     </inferredMetricsTieBreakers>
 </document>

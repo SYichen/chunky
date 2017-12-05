@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class TasksViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     let appDel = UIApplication.shared.delegate as! AppDelegate
@@ -40,6 +41,8 @@ class TasksViewController: UIViewController, UICollectionViewDataSource, UIColle
             var completedChunks = task.completedChunks as! [Bool]
             if completedChunks[chunk.tag] {
                 chunk.backgroundColor = UIColor.lightGray
+            } else {
+                chunk.backgroundColor = hexStringToUIColor(hex: "63CAE2")
             }
         }
         return cell
@@ -72,7 +75,15 @@ class TasksViewController: UIViewController, UICollectionViewDataSource, UIColle
         }
     }
 
-
+    @IBAction func logOut(_ sender: UIButton) {
+        do {
+            try Auth.auth().signOut()
+        } catch {
+            print("error logging out")
+        }
+        performSegue(withIdentifier: "toLogIn", sender: nil)
+    }
+    
     override func viewDidLoad() {
         collection.delegate = self
         collection.dataSource = self
@@ -93,6 +104,7 @@ class TasksViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     func fetchTasksFromCoreData() {
         do {
+            allTasks = []
             let tasks = try context.fetch(Task.fetchRequest()) as! [Task]
             for task in tasks {
                 addTask(task: task)
@@ -101,6 +113,28 @@ class TasksViewController: UIViewController, UICollectionViewDataSource, UIColle
         catch {
             print("Fetch failed :'(")
         }
+    }
+    
+    func hexStringToUIColor (hex:String) -> UIColor {
+        var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+        
+        if (cString.hasPrefix("#")) {
+            cString.remove(at: cString.startIndex)
+        }
+        
+        if ((cString.count) != 6) {
+            return UIColor.gray
+        }
+        
+        var rgbValue:UInt32 = 0
+        Scanner(string: cString).scanHexInt32(&rgbValue)
+        
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
     }
     /*
     // MARK: - Navigation

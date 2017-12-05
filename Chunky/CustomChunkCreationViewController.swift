@@ -34,6 +34,10 @@ class CustomChunkCreationViewController: UIViewController, UITextFieldDelegate {
    
     var chunks = ["", "", "", "", ""]
     
+    @IBAction func userTappedBackground(sender: AnyObject) {
+        view.endEditing(true)
+    }
+    
     func textFieldDidEndEditing(_ textField: UITextField) {
         if textField == self.chunk1Text {
             if textField.text != nil {

@@ -41,6 +41,7 @@ class TaskCreationViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         self.taskNameText.delegate = self
         // Do any additional setup after loading the view.
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -54,6 +55,9 @@ class TaskCreationViewController: UIViewController, UITextFieldDelegate {
         } else {
             chunks = ["20%", "20%", "20%", "20%", "20%"]
         }
+    }
+    @IBAction func userTappedBackground(sender: AnyObject) {
+        view.endEditing(true)
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {

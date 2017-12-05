@@ -46,7 +46,6 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         self.emailText.delegate = self
         self.passwordText.delegate = self
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -64,6 +63,9 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    @IBAction func userTappedBackground(sender: AnyObject) {
+        view.endEditing(true)
+    }
     func textFieldDidEndEditing(_ textField: UITextField) {
         if textField == self.emailText {
             if textField.text != nil {
